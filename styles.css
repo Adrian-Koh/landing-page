@@ -1,11 +1,17 @@
 body {
+    font-family: 'Roboto', sans-serif;
+}
+
+body, .info-text, .body, .cards-info, .card, .quote-container {
     display: flex;
     flex-direction: column;
-    font-family: 'Roboto', sans-serif;
 }
 
 .header {
     padding: 20px 100px;
+}
+
+.header, .footer {
     background-color: #1F2937;
 }
 
@@ -16,9 +22,12 @@ body {
 }
 
 .logo {
-    color: #F9FAF8;
     font-size: 24px;
     font-weight: 900;
+}
+
+.logo, .hero-main, .signup, .action-container, .footer {
+    color: #F9FAF8;
 }
 
 .nav-links {
@@ -40,12 +49,11 @@ a, .hero-secondary {
 
 .info {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .info-text {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     gap: 16px;
     width: 500px;
@@ -53,7 +61,6 @@ a, .hero-secondary {
 
 .hero-main {
     font-size: 48px;
-    color: #F9FAF8;
     font-weight: 900;
     padding: 0;
     margin: 0;
@@ -64,38 +71,35 @@ a, .hero-secondary {
 }
 
 .info-image {
-    width: 400px;
-    height: auto;
-    align-self: center;
+    width: 50%;
+    max-width: 400px;
 }
 
 .body {
-    display: flex;
-    flex-direction: column;
     justify-content: space-between;
 }
 
 .cards-info {
-    display: flex;
-    flex-direction: column;
     align-items: center;
 }
 
 .cards-title {
     font-size: 36px;
-    color: #1F2937;
     font-weight: 900;
+}
+
+.cards-title, .quote-container {
+    color: #1F2937;
 }
 
 .cards {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 16px;
 }
 
 .card {
-    display: flex;
-    flex-direction: column;
     align-items: center;
 }
 
@@ -110,46 +114,38 @@ a, .hero-secondary {
 }
 
 .quote-container {
-    display: flex;
-    flex-direction: column;
     align-items: center;
+    padding: 30px 100px;
     background-color: #E5E7EB;
-    color: #1F2937;
 }
 
-.quote {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 800px;
-}
 
 .quote-text {
     font-size: 36px;
     font-style: italic;
+    font-weight: 300;
 }
 
 .quote-author {
     font-size: 24px;
-    align-self:last baseline;
+    align-self: last baseline;
     font-weight: 900;
 }
 
 .signup {
     background-color: #3882F6;
-    color: #F9FAF8;
     border-radius: 10px;
-    width: 100px;
-    height: 50px;
-    line-height: 50px;
+    width: max-content;
+    height: max-content;
+    padding: 10px 30px;
     font-size: 16px;
     font-weight: 900;
+    border: 2px solid #F9FAF8;
 }
 
 .action-container {
     display: flex;
     justify-content: center;
-    color: #F9FAF8;
     padding: 20px;
 }
 
@@ -173,9 +169,7 @@ a, .hero-secondary {
 }
 
 .footer {
-    background-color: #1F2937;
     font-size: 16px;
     text-align: center;
-    color: #F9FAF8;
     padding: 20px;
 }
